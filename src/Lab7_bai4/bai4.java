@@ -16,7 +16,7 @@ Enumeration interfaces = NetworkInterface.getNetworkInterfaces( );
 while (interfaces.hasMoreElements( )) {
 NetworkInterface ni = (NetworkInterface) interfaces.nextElement(
 );
-System.out.println(ni);//
+System.out.println(ni);////
 }
 }
 }

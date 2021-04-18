@@ -27,7 +27,7 @@ static void displaySubInterfaces(NetworkInterface netIf) throws
 SocketException {
 Enumeration<NetworkInterface> subIfs = netIf.getSubInterfaces();
 for (NetworkInterface subIf : Collections.list(subIfs)) {
-out.printf("\tSub Interface Display name: %s\n",
+out.printf("\tSub Interface Display name: %s\n",//
 subIf.getDisplayName());
 out.printf("\tSub Interface Name: %s\n", subIf.getName());
 }

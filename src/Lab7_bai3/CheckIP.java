@@ -8,18 +8,20 @@ package Lab7_bai3;
 import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author Pham Tuan
  */
-public class KTIP extends javax.swing.JPanel {
+public class CheckIP extends javax.swing.JPanel {
 
     /**
      * Creates new form KTIP
      */
-    public KTIP() {
+    public CheckIP() {
         initComponents();
     }
 
@@ -84,26 +86,57 @@ public class KTIP extends javax.swing.JPanel {
     private void btnKiemTraActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKiemTraActionPerformedActionPerformed
         // TODO add your handling code here:
         String IP = txtIP.getText();
-            try
-            {
+        try
+        {
             InetAddress host = Inet4Address.getByName(IP);
             if(host != null)
             {
-            if(IP.contains("."))
-            JOptionPane.showMessageDialog(null, "Đây là IPv4");
-             else
-             JOptionPane.showMessageDialog(null, "Đây là IPv6");
-             }
+                if(IP.contains("."))
+                JOptionPane.showMessageDialog(null, "Đây là IPv4");
+                else
+                JOptionPane.showMessageDialog(null, "Đây là IPv6");
+            }
             else
             {
-            JOptionPane.showMessageDialog(null, "Địa chỉ IP nhập sai!!!");
+                JOptionPane.showMessageDialog(null, "Địa chỉ IP nhập sai!!!");
             }
-            catch (UnknownHostException ex)
-            {
+        }
+        catch (UnknownHostException ex)
+        {
             JOptionPane.showMessageDialog(null, "Địa chỉ IP nhập sai:\n" + ex.toString());
-            }
+        }
     }//GEN-LAST:event_btnKiemTraActionPerformedActionPerformed
+       public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Lab7_bai7.CheckIP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Lab7_bai7.CheckIP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Lab7_bai7.CheckIP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Lab7_bai7.CheckIP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
 
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Lab7_bai7.CheckIP().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnKiemTraActionPerformed;

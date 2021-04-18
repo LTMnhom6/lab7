@@ -20,7 +20,7 @@ public class AllAddr {
  InetAddress[] addr = InetAddress.getAllByName("www.vietnamnet.vn");
  for (int i = 0; i < addr.length; i++)
  {
- System.out.println (addr[i]);
+ System.out.println (addr[i]);//
  }
  }
  catch (UnknownHostException ex)

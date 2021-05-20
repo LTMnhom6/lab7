@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 //
 /**
  *
- * @author Pham Tuan
+ * @author Quang Toan
  */
 public class AllAddr {
     public static void main(String[]args)

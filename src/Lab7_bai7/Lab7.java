@@ -8,7 +8,7 @@ package Lab7_bai7;
 import java.net.*;
 /**
  *
- * @author kuxut
+ * @author Quang Toan
  */
 public class Lab7 {
 //

@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Pham Tuan
+ * @author Quang Toan
  */
 public class CheckIP extends javax.swing.JPanel {
 

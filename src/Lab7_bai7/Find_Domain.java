@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author kuxut
+ * @author Quang Toan
  */
 public class Find_Domain extends javax.swing.JFrame {
 

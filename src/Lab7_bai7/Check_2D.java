@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 //
 /**
  *
- * @author kuxut
+ * @author Quang Toan
  */
 public class Check_2D extends javax.swing.JFrame {
 

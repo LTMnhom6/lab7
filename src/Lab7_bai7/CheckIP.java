@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 //
 /**
  *
- * @author kuxut
+ * @author Quang Toan
  */
 public class CheckIP extends javax.swing.JFrame {
 

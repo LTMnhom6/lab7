@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 //
 /**
  *
- * @author kuxut
+ * @author Quang Toan
  */
 public class IP_Type extends javax.swing.JFrame {
 

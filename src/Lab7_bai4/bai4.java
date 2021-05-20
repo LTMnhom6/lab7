@@ -8,7 +8,7 @@ import java.net.*;
 import java.util.Enumeration;
 /**
  *
- * @author Pham Tuan
+ * @author Quang Toan
  */
 public class bai4{
 public static void main(String[] args) throws Exception {

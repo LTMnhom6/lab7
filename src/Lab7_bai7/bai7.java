@@ -17,7 +17,7 @@ import java.util.Collections;
 import java.util.Enumeration;
 /**
  *
- * @author kuxut
+ * @author Quang Toan
  */
 public class bai7 {
     public static void main(String args[]) throws SocketException {

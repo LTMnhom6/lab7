@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 //
 /**
  *
- * @author kuxut
+ * @author Quang Toan
  */
 public class JLab7 extends javax.swing.JFrame {
 

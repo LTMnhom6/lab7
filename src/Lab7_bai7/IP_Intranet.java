@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 //
 /**
  *
- * @author kuxut
+ * @author Quang Toan
  */
 public class IP_Intranet extends javax.swing.JFrame {
 
